@@ -101,8 +101,8 @@ void test_variant_constructor_P0608R3() {
     assert(e.index() == 0);
 #ifndef __EDG__ // TRANSITION, ...
     e = 0; // long
-#endif // !__EDG__
     assert(e.index() == 1);
+#endif // !__EDG__
 
     variant<float, int> f = 'a'; // int
     assert(f.index() == 1);
